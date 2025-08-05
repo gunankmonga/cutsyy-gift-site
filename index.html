@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Reasons You Fascinate Me</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to bottom right, #d8eaff, #ffd6e0, #ffeaea);
+      margin: 0;
+      padding: 0;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 1.8rem;
+      color: #e63946;
+    }
+    .day-box {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      margin: 1rem;
+      max-width: 600px;
+      width: 90%;
+      text-align: center;
+    }
+    .footer {
+      margin-top: auto;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>The Reasons You Fascinate Me and Amaze Me Every Day 💙</h1>
+  <div id="message-container"></div>
+  <div class="footer">With all my love, Gunank (Your Cutsyyy) 🧿</div>
+  <script>
+    // Static gift start date (Day 1 = 2025-08-04)
+    const startDate = new Date("2025-08-04T00:00:00");
+
+    const messages = [
+      `Your smile lights up even my toughest days🧿😊.Just seeing you there and to have you with me whom I know is there never to judge me it makes my day even lively and peaceful 🧿😊`,
+      `The way you laugh when I say something silly.😊🫡 it might be the worst I have said or just the most basic joke but you smile and just the cutest laugh makes me feel I won the whole world🧿😊`,
+      `Your honesty even when it scares you to be vulnerable or if I am scared to be vulnerable 🥺 we both make that space and area of comfort for each other where there is communication and no gap just a place to vent and learn and be better for each other🥺🧿`,
+      `How you always want to see both sides of me rather I may be the serious one or the goofy one  the caring side the funny side you accept each personality of me and make me feel comfortable and joyyy😊🧿 how was I so lucky🥺🧿`,
+      `The way you call me “gentleman,” and mean it😊🧿 it is one of my greatest achievements with you😊🧿 I know how important manners and gestures are for you and to make you feel I achieved some level of it makes me soo happy 😊🧿`,
+      `How you scold me gently when I do something wrong you get angry which is completely good you should but that anger is always projected to teach me to be better😊🧿 our progression to back to being better and stronger is always fruitful and peaceful 🥺🧿`,
+      `The sparkle in your eyes when you talk about something you love it just makes my heart so happy 😊🧿 you talking about your favourite singers ,favourite shows , how you love k pop especially BTS😊🧿 your craving for chips and ice cream 😊🧿 my heart melts listening to it🥺🧿 and I just wanna hear you talk about your favourite things things you find amusing every day🥺🧿`,
+      `Your soft voice it calms me instantly🥺🧿 you have the power to make my brain go silent in a second and I love you having that power🥺🧿I could be thinking a million things and you can catch it instantly just from my face and just make me go silent and calm🥺🧿 it feels so calming and you make me realise I can solve it🥺🧿`,
+      `The way you wish me Good Morning with My Cutsyyy words 😊🧿 there is nothing better possible than that to start your morning it is a warmth which can never be replicated by anybody 🥺🧿 the way you wish me in each thing it makes that thing a million times better 😊🧿I wanna wish you and be wished Good Morning by you everyday of my life🥺🧿`,
+      `How we discuss the songs for your stories it is the most fun experience and it connects us so welll🥺🧿 it shows how we listen and hear each others suggestions and come to a centre point to solve it😊🧿 how you listen to me and see what suits us🥺🧿it feels such a great time 🥺🧿 and I am so motivated that I should provide the best song 😊🧿`,
+      `Your confidence in moments you don’t feel strong that is so inspiring 😊🧿 you know what you need you don’t let anything hinder your confidence you have a will and the mental strength like no other whether it may be periods or any problem 😊🧿 but Cutsyyy you can be soft infront of me any time I will solve every problem 😊🧿`,
+      `The respect you show everyone around you that is such a adoring and just makes you realise how wonderful person you are 😊🧿 whether it may be senior a junior or someone with same age you have the power and just that humblness  which you have it such a pure part of you🥺🧿 I never felt that you were disrespectful to anyone 😊🧿 or you should have said this it showcases how brilliant you are😊🧿`,
+      `Your goofy side or you when you wanna babied it is the mostttt Cutestttt  😊🧿 and I love to give you that feeling and just it makes me so happy and my heart melt🥺🧿 and the way you can just make me laugh and the jokes we can share just by looking at each other 😊🧿`,
+      `How you light up any room you walk into especially for me 😊🧿 you just have that Aura and that presence where everybody feels somebody important and an approachable in a positive way person has arrived 😊🧿 ab mein toh kya hi bolu mein toh pehli jhalak mein magic ka shikkar tha 😶🧿 bas ab uska hi rahunga shikaar😊🧿`,
+      `The way you fought for that Chair with Mehar for me 😊🧿 it just made me feel how important I am for you  🥺🧿 you may feel it is a small moment but for me it was so important and so beautiful 🥺🧿Thankk youu soo much 🥺🧿`,
+      `Your attentiveness when I explain something 🥺🧿 it might be study or something I might like or something I enjoy watching you hear it so peacefully and put proper attention to it🥺🧿 it meanss soo much to me 🥺🧿 I explain things very deeply and might even make it so long but you listen to it and pay proper attention to it🥺🧿`,
+      `The way you think of me 🥺🧿like when you went heebe with your friends and I cane to your mind and you messaged me instantly 😊🧿 it meant so much to me and the fact you remembering when I told you about it monthss backk🥺🧿 Cutsyyy it meant so much to me 😊🧿`,
+      `The nicknames you give me they mean more than you know 😊🧿 I can never replicate or feel the same feeling they give when you call me bh those names 🥺🧿 when you call me Cutsyyy its the most comforting feel ever🥺🧿 and the feeling I belong to you🥺🧿and its the best feeling 🥺🧿 you call me a little dumb sometimes but I am your little dumb🥺🧿 Give me all the nicknames you want pls I love them all🥺🧿`,
+      `How you share your inner world with me especially your periods🥺🧿 I know those are the hrdest days for you and I qm so grateful you allowed me to be there for you and be with you in such difficult times and be your support 🥺🧿 you habdle the periods so beautifully and  every emotion you feel matters to me 🥺🧿 you matter to me the most 🥺🧿 Cutsyyy you can be strong infront of the world and you are but infront of me you can be softest I will take care of you🥺🧿I will make you feel comfortable 🥺🧿`,
+      `Your compassion for others😊🧿 it may be anybody me, mam  or even parth your helpfulness never decreased 🥺🧿🧿🧿 you used to go out of your way to help anybody 🥺🧿 That is very rare and such a pure trait of you🥺🧿🧿 and the way ypu understood and helped me with studies with emotions with our situations and everything you are very very special 🥺🧿🧿🧿`,
+      `The passion you have for your dreams🥺🧿🧿 The way you want to build your life in a pratical way and you know what in life🥺🧿🧿 Thats amazing 😊🧿🧿🧿 and so so inspiring 😊🧿 and you are ready to work so hard and hive it your everything to make it happen it’s really really amazing so see and it has always pushed me to try to be as good as you 😊🧿🧿🧿 and I really really mean it😊🧿 and I am here to support you and I always willl and will help you in every way 😊🧿🧿🧿`,
+      `Your creativity 😊🧿 the creative way you look at life and how creative you are😊🧿 the different art work you do and you have showed me you are sooo amazing 😊🧿🧿the way you know what colour will work with what the way you wrote the teachers day on the board at tution 😊🧿🧿🧿 the way you organised everything while be a leader at school your organising in a creative form it is so elegant so beautiful to see🥺🧿🧿🧿`,
+      `Your playful spirit when we chat late at night😊🧿🧿 You plan things for us to do 😊🧿 you are always energetic of whatever we decide to do whether we decide to play a game or we decide to share reel it never felt I force you whatever we do you are so engrossed in it and give your bestttt😊🧿🧿🧿 it makes the moments even more and more magicalll🥺🧿🧿🧿 you are so so special 🥺🧿🧿🧿Blessed to have you🥺🧿🧿🧿`,
+      `How you include me in your social space🥺🧿 whenever I was sitting next to you and how we eventually builded us up but whrn we were just starting the bond to strengthen I never felt tjat I was pushing you in to this🥺🧿🧿 you allowed me to be next to you if someone whome you know before was sitting with us I never felt I was ignored I felt more and more included 🥺🧿🧿🧿🧿 you made me feel I was special to ypu🥺🧿🧿🧿`,
+      `Your integrity 😊🧿you always keep your word it may be as small as being on time which you told me 😊🧿🧿 or the promise to be  together and not letting anything effect us after +2 ends we faced everything together but became stronger each and every time 🥺🧿🧿🧿🧿 you held up to each promise and never back down 🥺🧿🧿🧿 Thankkkk youuu soooo much My Cutsyyyyy🥺🧿🧿🧿`
+    ];
+
+    const now = new Date();
+    now.setHours(0,0,0,0);
+    const diffTime = now.getTime() - startDate.getTime();
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    const messageIndex = Math.min(diffDays, messages.length - 1);
+
+    const container = document.getElementById("message-container");
+    if (messageIndex < messages.length && diffDays >= 0) {
+      const box = document.createElement("div");
+      box.classList.add("day-box");
+      box.innerHTML = `<strong>Day ${messageIndex + 1}:</strong><br>${messages[messageIndex]}`;
+      container.appendChild(box);
+    } else if (diffDays < 0) {
+      container.innerHTML = `<div class="day-box"><strong>This gift starts at midnight today.</strong></div>`;
+    } else {
+      container.innerHTML = `<div class="day-box"><strong>All messages have been shown!</strong></div>`;
+    }
+  </script>
+</body>
+</html>
